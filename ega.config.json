@@ -1,0 +1,4 @@
+{
+  "entry": "./examples/index.ts",
+  "output": "./output"
+}
