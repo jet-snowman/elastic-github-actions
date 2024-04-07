@@ -1,0 +1,10 @@
+{
+  "ts": {
+    "entry": "./examples/ts/index.ts",
+    "output":  "./output/yaml"
+  },
+  "yaml": {
+    "folder": "./examples/yaml",
+    "output":  "./output/ts"
+  }
+}
