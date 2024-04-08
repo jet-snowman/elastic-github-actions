@@ -1,6 +1,6 @@
 {
   "name": "@jet-snowman/elastic-github-actions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "Generate GitHub Actions Workflow files using TypeScript (compiles to YAML)",
   "main": "./dist/index.js",
@@ -19,7 +19,7 @@
     "generate-workflow-types": "ts-node src/commands/generate-github-workflow-types.ts"
   },
   "bin": {
-    "jet-ega": "./jet-ega-cli.sh"
+    "jet-ega": "./cli.sh"
   },
   "repository": {
     "type": "git",

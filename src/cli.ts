@@ -1,7 +1,7 @@
 import { program } from 'commander';
-import { tsToYaml } from './ts-to-yaml';
-import { yamlToTs } from './yaml-to-ts';
-import { createConfig } from '../utils';
+import { tsToYaml } from './commands/ts-to-yaml';
+import { yamlToTs } from './commands/yaml-to-ts';
+import { createConfig } from './utils';
 
 program
   .name('jet-ega')
