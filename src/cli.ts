@@ -27,3 +27,4 @@ program.command('yamlToTs')
   });
 
 program.parse();
+

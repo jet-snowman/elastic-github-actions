@@ -1,3 +1,5 @@
-#!/usr/bin/env bash
+#!/usr/bin/env node
 
-node ./dist/cli "$@"
+'use strict';
+
+require('./dist/cli')
