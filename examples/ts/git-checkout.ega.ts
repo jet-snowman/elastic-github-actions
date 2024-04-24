@@ -1,4 +1,4 @@
-import { registerWorkflow } from '../../src/workflow';
+import { registerWorkflow } from '../../src';
 
 registerWorkflow({
   "name": "tests",

@@ -1,9 +1,9 @@
-import { loadConfig } from '../utils';
 import { glob } from 'fast-glob';
 import yaml from 'js-yaml';
 import fs from 'node:fs/promises';
-import { Workflow } from '../interfaces';
 import path from 'path';
+import { Workflow } from '../interfaces';
+import { loadConfig } from '../utils';
 
 export async function yamlToTs(): Promise<void> {
   const config = await loadConfig();

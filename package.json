@@ -1,11 +1,10 @@
 {
   "name": "@jet-snowman/elastic-github-actions",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "private": false,
   "description": "Generate GitHub Actions Workflow files using TypeScript (compiles to YAML)",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "dist/index",
+  "types": "dist/index",
   "files": [
     "dist"
   ],
@@ -13,13 +12,15 @@
     "node": ">=20"
   },
   "scripts": {
-    "watch": "tsup --watch",
-    "build": "tsup",
+    "watch": "tsc --watch",
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./build",
+    "compile": "tsc -p tsconfig.build.json",
     "test": "jest --coverage",
     "generate-workflow-types": "ts-node src/commands/generate-github-workflow-types.ts"
   },
   "bin": {
-    "jet-ega": "./cli.sh"
+    "jet-ega": "./dist/bin.js"
   },
   "repository": {
     "type": "git",
@@ -47,13 +48,13 @@
     "eslint-plugin-jest": "^28.2.0",
     "json-schema-to-typescript": "^13.1.2",
     "ts-jest": "^29.1.2",
-    "tsup": "^8.0.2",
     "typescript": "^5.4.4"
   },
   "dependencies": {
     "@types/js-yaml": "^4.0.9",
     "commander": "^12.0.0",
     "fast-glob": "^3.3.2",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "ts-node": "^10.9.2"
   }
 }

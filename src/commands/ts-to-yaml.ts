@@ -1,7 +1,7 @@
 import path from 'path';
 import * as fs from 'node:fs/promises';
-import { getWorkflows } from '../workflow';
 import yaml from 'js-yaml';
+import { getWorkflows } from '../workflow';
 import { loadConfig } from '../utils';
 
 const TEMPLATE = [
