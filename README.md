@@ -6,7 +6,17 @@
     <img src="https://raw.githubusercontent.com/jet-snowman/elastic-github-actions/main/assets/tree.jpg" width="400">
 </p>
 
-![GitHub License](https://img.shields.io/github/license/jet-snowman/elastic-github-actions)
+<p align="center">
+  <a href="https://www.npmjs.com/package/@jet-snowman/elastic-github-actions">
+      <img src="https://img.shields.io/npm/v/@jet-snowman/elastic-github-actions.svg" alt="npm version">
+  </a>
+  <a href="https://github.com/jet-snowman/elastic-github-actions/issues">
+      <img src="https://img.shields.io/github/issues/jet-snowman/elastic-github-actions.svg" alt="issues">
+  </a>
+  <a href="https://github.com/jet-snowman/elastic-github-actions/blob/main/LICENSE">
+      <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="license">
+  </a>
+</p>
 
 ## Installation
 
@@ -16,7 +26,8 @@ npm install @jet-snowman/elastic-github-actions
 
 ## Overview
 
-Leveraging TypeScript's flexibility enables seamless inclusion and sharing of entities across multiple files, eliminating redundancies and providing autocomplete for permitted settings in GitHub Actions.
+Leveraging TypeScript's flexibility enables seamless inclusion and sharing of entities across multiple files, eliminating redundancies and
+providing autocomplete for permitted settings in GitHub Actions.
 
 ## Getting Started
 
@@ -41,30 +52,36 @@ Commands:
 npx jet-ega init
 ```
 
-It creates `jet-ega.config.json` config file with the following structure: 
+It creates `jet-ega.config.json` config file with the following structure:
+
 ```json
 {
   "ts": {
     "entry": "./examples/ts/index.ts",
-    "output":  "./output/yaml"
+    "output": "./output/yaml"
   },
   "yaml": {
     "folder": "./examples/yaml",
-    "output":  "./output/ts"
+    "output": "./output/ts"
   }
 }
 ```
-You have the flexibility to specify the entry TypeScript file for generating GitHub Action workflow YAML files. Moreover, it offers the ability to effortlessly convert existing YAML files into TypeScript files.
+
+You have the flexibility to specify the entry TypeScript file for generating GitHub Action workflow YAML files. Moreover, it offers the
+ability to effortlessly convert existing YAML files into TypeScript files.
 
 When you are done with the config file.
 
 TS files to YAML files
+
 ```bash
 npx jet-ega tsToYaml
 ```
+
 OR
 
 YAML files to TS files
+
 ```bash
 npx jet-ega yamlToTs
 ```
@@ -185,17 +202,21 @@ registerWorkflow({
   jobs
 });
 ```
+
 With TypeScript, you can seamlessly organize your code the way you want or integrate it into your existing project without any hassles
 
 ## Helpers
 
 `toMultiRun()` - aids in writing multiline yaml like this:
+
 ```yaml
 name: Test
 run: |
   command 1
   command 2
 ```
+
 ## License
+
 This project is licensed under the MIT License
 
